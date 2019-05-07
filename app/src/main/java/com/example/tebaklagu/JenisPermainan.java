@@ -12,6 +12,7 @@ public class JenisPermainan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jenis_permainan);
+        Btn1();
     }
     private void Btn1(){
         Button next = (Button) findViewById(R.id.tebakLagu);
