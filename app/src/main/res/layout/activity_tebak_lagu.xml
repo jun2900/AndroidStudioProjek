@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".TebakLagu">
 
     <Button
@@ -18,7 +19,7 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonB"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/play" />
 
     <Button
         android:id="@+id/buttonB"
@@ -32,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonA"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/play" />
 
     <Button
         android:id="@+id/buttonC"
@@ -42,7 +43,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="C. Test3"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/judulSebenarnya"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonD"
@@ -56,14 +57,14 @@
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
         android:text="D. Test4"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/judulSebenarnya"
         app:layout_constraintEnd_toStartOf="@+id/buttonC"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonA" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/nomorsoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -75,7 +76,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -84,7 +85,33 @@
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/nomorsoal"
         app:srcCompat="@drawable/playbtn256" />
+
+    <TextView
+        android:id="@+id/judulSebenarnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="judul yang benar:"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/lanjut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/lanjut"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="lanjut"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

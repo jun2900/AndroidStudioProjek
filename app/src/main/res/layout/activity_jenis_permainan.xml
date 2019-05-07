@@ -14,12 +14,14 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
         android:text="Tebak Lagu"
-        app:layout_constraintBottom_toTopOf="@+id/tebakPenyanyi"
+        app:layout_constraintBottom_toTopOf="@+id/tebakLirik"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tebakLirik" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/tebakLirik"
@@ -27,16 +29,14 @@
         android:layout_height="75dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="32dp"
         android:text="Tebak Lirik"
-        app:layout_constraintBottom_toTopOf="@+id/tebakLagu"
+        app:layout_constraintBottom_toTopOf="@+id/tebakPenyanyi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tebakLagu"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tebakLagu" />
+        app:layout_constraintTop_toBottomOf="@+id/tebakLirik" />
 
     <TextView
         android:id="@+id/textView3"
@@ -68,7 +68,7 @@
         android:layout_marginBottom="8dp"
         android:text="Pilih Jenis Lagu"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/tebakLirik"
+        app:layout_constraintBottom_toTopOf="@+id/tebakLagu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
