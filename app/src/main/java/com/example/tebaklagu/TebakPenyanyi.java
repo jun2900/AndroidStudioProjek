@@ -40,8 +40,8 @@ public class TebakPenyanyi extends AppCompatActivity {
         pilihanC3 = findViewById(R.id.buttonC3);
         pilihanD3 = findViewById(R.id.buttonD3);
 
-        judulsebenarnya3 = findViewById(R.id.judulSebenarnya);
-        lanjut3 = findViewById(R.id.lanjut);
+        judulsebenarnya3 = findViewById(R.id.penyanyiSebenarnya);
+        lanjut3 = findViewById(R.id.lanjut3);
 
         soalBaru();
     }
@@ -75,25 +75,28 @@ public class TebakPenyanyi extends AppCompatActivity {
             pilihanB3.setOnClickListener(notcorrect());
             counter++;
         }
-        if (posisiJawabanBenar == 1) {
-            pilihanC3.setText("B. " + soalTebakPenyanyi.getPenyanyi());
+        if (posisiJawabanBenar == 2) {
+            pilihanC3.setText("C. " + soalTebakPenyanyi.getPenyanyi());
             pilihanC3.setOnClickListener(correct());
 
         } else {
-            pilihanC3.setText("B. "+jawabansalah.get(counter));
+            pilihanC3.setText("C. "+jawabansalah.get(counter));
             pilihanC3.setOnClickListener(notcorrect());
             counter++;
         }
-        if (posisiJawabanBenar == 1) {
-            pilihanD3.setText("B. " + soalTebakPenyanyi.getPenyanyi());
+        if (posisiJawabanBenar == 3) {
+            pilihanD3.setText("D. " + soalTebakPenyanyi.getPenyanyi());
             pilihanD3.setOnClickListener(correct());
 
         } else {
-            pilihanD3.setText("B. "+jawabansalah.get(counter));
+            pilihanD3.setText("D. "+jawabansalah.get(counter));
             pilihanD3.setOnClickListener(notcorrect());
             counter++;
         }
-        
+
+
+        ImageView imageView = findViewById(R.id.ivPenyanyi);
+        imageView.setImageDrawable(getDrawable(soalTebakPenyanyi.getImgid()));
 
     }
 

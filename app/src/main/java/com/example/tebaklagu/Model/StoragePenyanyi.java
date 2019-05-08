@@ -29,6 +29,7 @@ public class StoragePenyanyi {
         pilihanSalah.add("Aero Smith");
         pilihanSalah.add("Shawn Mendes");
         pilihanSalah.add("The Chainsmoker");
+        pilihanSalah.add("Chad Krueger");
     }
 
     public static SoalTebakPenyanyi getImg (int index) {return soalTebakPenyanyis.get(index);}
