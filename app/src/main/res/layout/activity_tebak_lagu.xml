@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toStartOf="@+id/buttonB"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/play" />
+        app:layout_constraintTop_toBottomOf="@+id/play3" />
 
     <Button
         android:id="@+id/buttonB"
@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonA"
-        app:layout_constraintTop_toBottomOf="@+id/play" />
+        app:layout_constraintTop_toBottomOf="@+id/play3" />
 
     <Button
         android:id="@+id/buttonC"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonA" />
 
     <TextView
-        android:id="@+id/nomorsoal"
+        android:id="@+id/nomorsoal3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -76,16 +76,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/play"
+        android:id="@+id/play3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomorsoal"
+        app:layout_constraintTop_toBottomOf="@+id/nomorsoal3"
         app:srcCompat="@drawable/playbtn256" />
 
     <TextView

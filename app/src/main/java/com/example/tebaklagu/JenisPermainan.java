@@ -13,6 +13,7 @@ public class JenisPermainan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jenis_permainan);
         Btn1();
+        Btn2();
     }
     private void Btn1(){
         Button next = (Button) findViewById(R.id.tebakLagu);
@@ -25,4 +26,15 @@ public class JenisPermainan extends AppCompatActivity {
             }
         });
     }
+    private void Btn2(){
+        Button next = (Button) findViewById(R.id.tebakPenyanyi);
+        System.out.println(next);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(JenisPermainan.this, TebakPenyanyi.class);
+                startActivity(myIntent);
+            }
+        });
+     }
 }

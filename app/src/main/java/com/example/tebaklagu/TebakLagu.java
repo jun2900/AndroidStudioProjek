@@ -1,21 +1,18 @@
 package com.example.tebaklagu;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.tebaklagu.Model.SoalTebakLagu;
 import com.example.tebaklagu.Model.StorageLagu;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -37,8 +34,8 @@ public class TebakLagu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tebak_lagu);
 
-        nomorSoal = findViewById(R.id.nomorsoal);
-        playButton = findViewById(R.id.play);
+        nomorSoal = findViewById(R.id.nomorsoal3);
+        playButton = findViewById(R.id.play3);
         pilihanA = findViewById(R.id.buttonA);
         pilihanB = findViewById(R.id.buttonB);
         pilihanC = findViewById(R.id.buttonC);
