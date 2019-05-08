@@ -113,7 +113,7 @@ public class TebakPenyanyi extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setCorrect(true);
+                setCorrect(false);
             }
         };
     }
